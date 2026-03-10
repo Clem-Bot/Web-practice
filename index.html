@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Template</title>
+</head>
+<body>
+    <!-- This is a template for a simple HTML page. You can customize it by adding your own content, styles, and scripts. -->
+    <!-- The header section contains the logo and navigation menu. --> 
+    <header class ="header">
+        <div class="container nav-container">
+            <h1 class="logo">Quicksite</h1>
+            <button class="menu-toggle" id="menu-toggle">Click</button>
+            <nav class="nav" id="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+        <!-- The hero section is the main banner of the page, where you can add a catchy headline and a call-to-action button. -->
+        <section class="hero" id ="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2>Welcome to Quicksite</h2>
+                    <p>Your one-stop solution for quick and easy website creation.</p>
+                    <a href="#services" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <!-- The about section provides information about your company or yourself. -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-text">Learn more about our company and what we do.</p>
+            </div>
+        </section>
+        <!-- The services section highlights the services you offer. -->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Web Design</h3>
+                        <p>We create stunning and responsive websites that look great on all devices.</p>
+                    </div>
+                    <div class="card">
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your website's visibility on search engines with our SEO services.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Content Creation</h3>
+                        <p>Engage your audience with high-quality content tailored to your brand.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The contact section provides a way for visitors to get in touch with you. -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                
+                <form id ="contact-form" class ="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="success-message" class="success-message"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Quicksite. All rights reserved.</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
